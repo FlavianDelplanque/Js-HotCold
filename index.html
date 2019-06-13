@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+	<h1>Nombre aléatoire</h1>
+
+
+	<div id="entrerDiv">
+		<label>Entre un nombre entre 1 et 100</label>
+		<input type="text" name="chiffre" id="chiffre" onkeypress="if (event.keyCode == 13) nombreUti();">
+	    <input type="button" onClick="nombreUti();" value="Click Me" id="button" />
+	</div>
+
+	<div id="reponseDiv">
+	    <p id="reponse"></p>
+	    <p id="reponseB"></p>
+	    <p id="reponseM"></p>
+	</div>
+
+	<div id="rouletteDiv">
+		<div id="rouletteC">
+			<p id="roulette"></p>
+		</div>
+	</div>
+
+	<div id="divBoutonR">
+		<button id="boutonRoulette" onClick="finish(); nombreUtiR();">Stop</button>
+	</div>
+	
+	<script type="text/javascript" src="JS/script.js" charset="utf-8"></script>
+</body>
+</html>
